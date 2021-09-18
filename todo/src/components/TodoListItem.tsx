@@ -1,6 +1,11 @@
 import React from "react";
+import { Todo } from "../models/Todo";
 
-const TodoListItem = () => {
+interface TodoListItemProps {
+    todo: Todo
+}
+
+const TodoListItem = (props: TodoListItemProps) => {
     return (
         <tr className="uk-animation-slide-bottom-medium">
             <td className="uk-width-auto">
@@ -12,7 +17,7 @@ const TodoListItem = () => {
             </td>
             {/* propriedade do uikit */}
             <td className="uk-width-expand">
-                Item
+                {props.todo.title}
             </td>
             {/* propriedade do uikit */}
             <td className="uk-width-auto">
