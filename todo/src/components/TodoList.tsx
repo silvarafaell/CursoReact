@@ -7,6 +7,8 @@ const TodoList = () => {
         { id: 1, title: 'Ir ao supermercado', done: true },
         { id: 2, title: 'Ir a academia', done: false }
     ];
+
+
     return (
         <table className="uk-table">
             <caption>Lista de tarefas</caption>
