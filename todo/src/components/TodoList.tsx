@@ -6,7 +6,25 @@ const TodoList = () => {
         { id: 1, title: 'Ir ao supermercado', done: false },
         { id: 2, title: 'Ir a academia', done: false }
     ];
-    return (<div>Todo List</div>)
+    return (
+        <table className="uk-table">
+            <caption>Lista de tarefas</caption>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tarefa</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {
+                    todos?.map(
+                        todo => (<div key={todo.id}>{todo.title}</div>)
+                    )
+                }
+            </tbody>
+        </table>
+    );
 }
 
 export default TodoList;
