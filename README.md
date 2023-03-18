@@ -1,5 +1,5 @@
 # CursoReact
-### Curso > Criando um App com React, TypeScript, Hooks, Context e Forms na plataforma Balta.io
+### Curso -  Criando um App com React, TypeScript, Hooks, Context e Forms na plataforma Balta.io
 - Estrutura da Aplicação
 - React e ReactDOM
 - Iniciando um componente
